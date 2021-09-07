@@ -1,9 +1,13 @@
 import { makeStyles } from "@material-ui/core";
+import { theme } from "_config/theme";
 
 export const useStyles = makeStyles({
   buttonsWrapper: {
     display: "flex",
     justifyContent: "space-between",
+    backgroundColor:theme.palette.background.paper,
+    margin:-16,
+    padding:16,
 
     "& .MuiButton-root": {
       minWidth: 136,

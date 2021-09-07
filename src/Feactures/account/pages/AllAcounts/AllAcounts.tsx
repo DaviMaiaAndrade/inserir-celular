@@ -19,15 +19,21 @@ export const AllAcounts:React.FC=()=>{
 
                  </AppBar> }
 
-             header={<ProcessDescriptionHeader 
-                title={"Ativar Conta"} 
+             header={
+             <div className={styles.header}>
+                <ProcessDescriptionHeader 
+                title={"Ative sua conta"} 
                 subtitle={"Informe o número do celular cadastrado"} 
-                description={"Você receberá, por mensagem de texto, um código de validação de seu acesso"} /> } 
+                description={"Você receberá, por mensagem de texto, um código de validação de seu acesso"} />
+             </div>    } 
                 
                 main={<div>
                         <InputCel></InputCel>
                      </div>} 
-                footer={ <ProcessPageFooter/> } />
+                footer={                    
+                        <ProcessPageFooter/>
+                     } 
+            />
                 
              </PageContainer>
        );

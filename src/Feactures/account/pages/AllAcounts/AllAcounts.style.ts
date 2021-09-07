@@ -3,7 +3,7 @@ import { theme } from '_config/theme'
 
 export const useStyles = makeStyles({
    header:{
-       width:265,
-       padding:9
+       width:270,
+       
    }
 })
